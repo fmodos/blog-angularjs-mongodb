@@ -1,0 +1,41 @@
+<div class="container">
+  <h1>Create a new Dish</h1>
+
+  <form novalidate="novalidate" class="form-horizontal">
+    <div class="control-group">
+      <label class="control-label" for="inputFirstName">Name:</label>
+
+      <div class="controls">
+        <input type="text" id="inputFirstName" ng-model="dish.name" placeholder="Name"/>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputFirstName">Price:</label>
+
+      <div class="controls">
+        <input type="text" id="inputFirstName" ng-model="dish.price" placeholder="Name"/>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="textDescription">Description:</label>
+
+      <div class="controls">
+        <textarea type="text" cols="50" rows="10" id="textDescription" ng-model="dish.description" placeholder="Description">
+        </textarea>        
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="inputLastName">Ingredients:</label>
+
+      <div class="controls">
+        <textarea type="text" cols="50" rows="5" id="textDescription" ng-model="dish.tags" placeholder="Description">
+        </textarea>  
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <a ng-click="createNewDish()" class="btn btn-small btn-primary">Save</a>
+      </div>
+    </div>
+  </form>
+</div>
